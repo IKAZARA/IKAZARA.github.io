@@ -6,11 +6,12 @@ const noBtn = document.querySelector(".no-btn");
 
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Aaaaa, aku juga suka kamuuu";
-  gif.src ="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
+  gif.src =
+    "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
 });
 
 noBtn.addEventListener("mouseover", () => {
-  const noBtnRect noßtn.getBoundingClientRect();
+  const noBtnRect = noBtn.getBoundingClientRect();
   const maxX = window.innerWidth - noBtnRect.width;
   const maxy = window.innerHeight - noBtnRect.height;
   
@@ -18,5 +19,5 @@ noBtn.addEventListener("mouseover", () => {
   const randomY = Math.floor(Math.random() * maxY);
   
   noBtn.style.left = randomX + "px"; 
-  noßtn.style.top = randomy + "px";
+  noBtn.style.top = randomy + "px";
 });
